@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <h1 id="title">Tell Me About Music</h1>
+      <p id="description">
+        This is a survey where you can tell about a music you're inpired by.
+      </p>
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="First Name"
+          />
+        </div>
+
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Email"
+          />
+        </div>
+
+        <div>
+          <label for="number" id="number-label">Age (optional)</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="0"
+            max="5"
+            placeholder="Age"
+          />
+        </div>
+
+        <div>
+          <label for="guitars">Select guitar type</label>
+          <select name="guitars" id="dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="fender">Fender</option>
+            <option value="martin">Martin</option>
+            <option value="epiphone">Epiphone</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="gender">Select Gender</label>
+          <label class="button-container">
+            <input type="radio" name="gender" value="male" /> Male<br />
+          </label>
+          <label class="button-container"
+            ><input type="radio" name="gender" value="female"/> Female<br
+          /></label>
+          <label class="button-container"
+            ><input type="radio" name="gender" value="other" /> Other</label
+          >
+        </div>
+
+        <div>
+          <label>Select Music Type</label>
+          <label class="button-container">
+            <input type="checkbox" name="jaz" value="Jaz" /> Jaz
+          </label>
+          <label class="button-container">
+            <input type="checkbox" name="rock" value="Rock" /> Rock
+          </label>
+          <label class="button-container">
+            <input
+              type="checkbox"
+              name="country-music"
+              value="Country-music"
+              checked
+            />
+            Country Music
+          </label>
+          <label class="button-container">
+            <input type="checkbox" name="reggae" value="Reggae" checked />
+            Reggae
+          </label>
+          <label class="button-container">
+            <input
+              type="checkbox"
+              name="soul-music"
+              value="Soul-music"
+              checked
+            />
+            Soul Music
+          </label>
+        </div>
+
+        <div>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment..."
+          ></textarea>
+        </div>
+
+        <div>
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
